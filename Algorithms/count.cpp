@@ -11,7 +11,7 @@ using namespace std;
 // Собственная реализация count
 template <typename Iterator, typename T>
 int my_count(Iterator first, Iterator last, const T& value) {
-    int counter;
+    int counter = 0;
     
     while (first != last) {
         if (*first == value) {
